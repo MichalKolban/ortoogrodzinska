@@ -1,0 +1,60 @@
+@import "../../styles/breakpoints.scss";
+
+.title {
+  font-size: 18px;
+  color: red;
+
+  @include display(tablet) {
+    font-size: 24px;
+    color: green;
+  }
+
+  @include display(desktop) {
+    font-size: 32px;
+    color: darkblue;
+  }
+}
+
+.wrapper {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff8f0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: var(--font-playfair), serif;
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.socialBox {
+  display: none;
+
+  @include display(tablet) {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    width: 100px;
+    // border: 1px solid green;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @include display(desktop) {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    width: 100px;
+    // border: 1px solid green;
+    display: flex;
+    justify-content: space-around;
+  }
+}

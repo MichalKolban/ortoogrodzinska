@@ -1,0 +1,112 @@
+@import "../../styles/breakpoints.scss";
+
+.wrapper {
+  height: 440px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  //   margin: 100px auto;
+  margin: 50px auto;
+  flex-direction: column;
+
+  @include display(tablet) {
+    // margin: 0 100px;
+    max-width: 1000px;
+    flex-direction: row;
+    height: 200px;
+    height: 340px;
+  }
+
+  @include display(desktop) {
+    // margin: 0 100px;
+    max-width: 1000px;
+    flex-direction: row;
+    height: 200px;
+    height: 340px;
+  }
+}
+
+.titleBox {
+  margin: auto 0;
+  font-family: var(--font-playfair), serif;
+  margin: 0 auto;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include display(tablet) {
+    font-size: 32px;
+    width: 50%;
+  }
+
+  @include display(desktop) {
+    font-size: 32px;
+  }
+}
+
+.title {
+  font-size: 44px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.smallTitle {
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+}
+
+.companyBox {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  //   justify-content: center;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.company {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-direction: column;
+
+  @include display(tablet) {
+    width: 420px;
+    flex-direction: row;
+  }
+
+  @include display(desktop) {
+    width: 420px;
+    flex-direction: row;
+  }
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.companyName {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.imageWrapper {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.textWrapper {
+  width: 200px;
+  margin-bottom: 20px;
+}

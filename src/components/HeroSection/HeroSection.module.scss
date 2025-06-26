@@ -1,0 +1,36 @@
+@import "../../styles/breakpoints.scss";
+
+.wrapper {
+  height: 80vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  // border: 3px solid orange;
+  font-family: var(--font-playfair-italic);
+
+  @include display(tablet) {
+    height: 100vh;
+  }
+
+  @include display(desktop) {
+    height: 100vh;
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-family: var(--font-playfair-italic), serif;
+  font-style: italic;
+  font-weight: 400;
+  margin-right: 20px;
+
+  @include display(tablet) {
+    font-size: 32px;
+    margin-right: 50px;
+  }
+
+  @include display(desktop) {
+    font-size: 32px;
+    margin-right: 100px;
+  }
+}

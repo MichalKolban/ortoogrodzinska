@@ -1,0 +1,43 @@
+@import "../../styles/breakpoints.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  margin-top: 150px;
+
+  @include display(tablet) {
+    flex-direction: row;
+    margin-top: 0px;
+  }
+
+  @include display(desktop) {
+    flex-direction: row;
+    margin-top: 0px;
+  }
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+  font-style: italic;
+  font-family: var(--font-playfair), serif;
+
+  @include display(tablet) {
+    margin: 0 100px;
+    flex-direction: row;
+  }
+
+  @include display(desktop) {
+    margin: 0 100px;
+    flex-direction: row;
+  }
+}
+
+.socialBox {
+  display: flex;
+  justify-content: space-evenly;
+  width: 120px;
+}
