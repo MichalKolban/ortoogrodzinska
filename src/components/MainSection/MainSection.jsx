@@ -11,7 +11,7 @@ export const MainSection = () => {
         <article className={styles.description}>
           <p className={styles.paragraph}>
             Ze stomatologią związana jestem od dziecka dzięki rodzinnym
-            tradycjom. Absolwentka Pomorskiego Uniwersytetu Medycznego, którą
+            tradycjom. Absolwentka Pomorskiego Uniwersytetu Medycznego, który
             ukończyłam w 2015 roku. Od tamtej pory nieprzerwanie rozwijam swoją
             karierę zawodową, zdobywając cenne doświadczenie i stale podnosząc
             kwalifikacje. Stomatologia to dla mnie nie tylko zawód, lecz przede
