@@ -16,6 +16,7 @@
   @include display(desktop) {
     flex-direction: row;
     margin-top: 0px;
+    width: 300px;
   }
 }
 
@@ -26,12 +27,12 @@
   font-family: var(--font-playfair), serif;
 
   @include display(tablet) {
-    margin: 0 100px;
+    // margin: 0 100px;
     flex-direction: row;
   }
 
   @include display(desktop) {
-    margin: 0 100px;
+    // margin: 0 100px;
     flex-direction: row;
   }
 }
@@ -45,9 +46,11 @@
 
   @include display(tablet) {
     margin-bottom: 0px;
+    margin-top: 0px;
   }
 
   @include display(desktop) {
     margin-bottom: 0px;
+    margin-top: 0px;
   }
 }
