@@ -10,7 +10,7 @@ export const Footer = () => {
     <div className={styles.wrapper}>
       <div className={styles.title}>Social Media:</div>
       <div className={styles.socialBox}>
-        <Link
+        {/* <Link
           href={
             "https://www.facebook.com/p/Karolina-Ogrodzi%C5%84ska-Dentysta-100063768894482/"
           }
@@ -22,7 +22,7 @@ export const Footer = () => {
             height={25}
             alt="instagram icon"
           />
-        </Link>
+        </Link> */}
         <Link
           href={
             "https://www.facebook.com/p/Karolina-Ogrodzi%C5%84ska-Dentysta-100063768894482/"

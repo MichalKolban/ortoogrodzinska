@@ -11,7 +11,7 @@ export const Navigation = () => {
     <div className={styles.wrapper}>
       <h1 className={styles.logo}>OrtoOgrodzińska</h1>
       <div className={styles.socialBox}>
-        <Link
+        {/* <Link
           href={
             "https://www.facebook.com/p/Karolina-Ogrodzi%C5%84ska-Dentysta-100063768894482/"
           }
@@ -22,8 +22,8 @@ export const Navigation = () => {
             width={25}
             height={25}
             alt="instagram icon"
-          />
-        </Link>
+          /> 
+        </Link> */}
         <Link
           href={
             "https://www.facebook.com/p/Karolina-Ogrodzi%C5%84ska-Dentysta-100063768894482/"
