@@ -15,7 +15,7 @@
 
   @include display(desktop) {
     flex-direction: row;
-    margin-top: 0px;
+    margin: 0 auto;
     width: 300px;
   }
 }
@@ -27,12 +27,10 @@
   font-family: var(--font-playfair), serif;
 
   @include display(tablet) {
-    // margin: 0 100px;
     flex-direction: row;
   }
 
   @include display(desktop) {
-    // margin: 0 100px;
     flex-direction: row;
   }
 }
