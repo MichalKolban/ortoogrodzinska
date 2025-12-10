@@ -1,0 +1,61 @@
+/* @media screen and (max-width: 600px) and (orientation: portrait) { */
+/* Styl dla urządzeń mobilnych w widoku wertykalnym */
+/* } */
+
+/* @media screen and (max-width: 600px) and (orientation: landscape) { */
+/* Styl dla urządzeń mobilnych w widoku horyzontalnym */
+/* } */
+
+/* @media screen and (min-width: 601px) and (max-width: 900px) and (orientation: portrait) { */
+/* Styl dla tabletów w widoku wertykalnym */
+/* } */
+
+/* @media screen and (min-width: 601px) and (max-width: 900px) and (orientation: landscape) { */
+/* Styl dla tabletów w widoku horyzontalnym */
+/* } */
+
+/* @media screen and (min-width: 901px) and (max-width: 1600px) and (orientation: landscape) { */
+/* Styl dla laptopów w widoku horyzontalnym */
+/* } */
+
+/*   to jest merge tych dwoch
+/* @media screen and (min-width: 901px) and (max-width: 1200px) and (orientation: landscape) { */
+/* Styl dla laptopów w widoku horyzontalnym */
+/* } */
+
+/* @media screen and (min-width: 1200px) and (max-width: 1600px) and (orientation: portrait) { */
+/* Styl dla komputerów stacjonarnych w widoku wertykalnym */
+/* } */
+
+.wrapper {
+  background-color: #333;
+  height: 30px;
+  /* width: 100%; */
+  width: 100vw;
+  max-width: 1680px;
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media screen and (max-width: 600px) and (orientation: portrait) {
+    width: 100vw;
+  }
+}
+
+.sign {
+  font-family: Montserrat, serif;
+  font-weight: 300;
+  color: #fff;
+  margin-right: 100px;
+  font-size: 12px;
+
+  @media screen and (max-width: 600px) and (orientation: portrait) {
+    margin-right: 25px;
+  }
+}
+
+.sign > span {
+  font-weight: 500;
+}
