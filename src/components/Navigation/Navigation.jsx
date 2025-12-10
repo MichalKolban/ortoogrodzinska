@@ -1,7 +1,10 @@
 import Image from "next/image";
 
-const iconInstagram = "/icons/instagram-logo.png";
-const iconFacebook = "/icons/facebook-logo.png";
+// const iconInstagram = "/icons/instagram-logo.png";
+// const iconFacebook = "/icons/facebook-logo.png";
+
+const iconInstagram = "/icons/icon_instagram.svg";
+const iconFacebook = "/icons/icon_fb.svg";
 
 import styles from "./Navigation.module.scss";
 import Link from "next/link";
@@ -11,7 +14,9 @@ export const Navigation = () => {
     <div className={styles.wrapper}>
       <h1 className={styles.logo}>OrtoOgrodzińska</h1>
       <div className={styles.socialBox}>
-        {/* <Link
+        <p className={styles.socialSign}>Social Media</p>
+        <Link
+          className={styles.socialSignIcon}
           href={
             "https://www.facebook.com/p/Karolina-Ogrodzi%C5%84ska-Dentysta-100063768894482/"
           }
@@ -19,12 +24,13 @@ export const Navigation = () => {
         >
           <Image
             src={iconInstagram}
-            width={25}
-            height={25}
+            width={24}
+            height={24}
             alt="instagram icon"
-          /> 
-        </Link> */}
+          />
+        </Link>
         <Link
+          className={styles.socialSignIcon}
           href={
             "https://www.facebook.com/p/Karolina-Ogrodzi%C5%84ska-Dentysta-100063768894482/"
           }
@@ -32,8 +38,8 @@ export const Navigation = () => {
         >
           <Image
             src={iconFacebook}
-            width={25}
-            height={25}
+            width={24}
+            height={24}
             alt="facebook icon"
           />
         </Link>

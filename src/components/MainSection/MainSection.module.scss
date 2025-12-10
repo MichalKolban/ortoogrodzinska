@@ -3,84 +3,126 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
-  width: 95%;
+  width: 100%;
   flex-direction: column-reverse;
-  margin: 0 auto;
-  align-items: center;
-  // border: 2px solid red;
-
-  @include display(tablet) {
-    // margin: 0 100px;
-    width: 95%;
-    margin: 0 auto;
-    flex-direction: row;
-  }
 
   @include display(desktop) {
-    margin: 0 100px;
     flex-direction: row;
-    justify-content: space-evenly;
+    margin-top: 60px;
+    height: 800px;
   }
 }
 
-.descriptionBox {
-  // max-width: 530px;
-  margin: auto 0;
+.textSection {
+  margin: 0 15px;
+  padding-bottom: 40px;
 
-  @include display(tablet) {
-    max-width: 530px;
+  @include display(desktop) {
     width: 50%;
-  }
-
-  @include display(desktop) {
-    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+    padding-right: 60px;
+    padding-left: 20px;
   }
 }
 
-.imageBox {
+.heading {
+  font-size: 24px;
+  font-family: var(--font-primary);
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+  text-align: center;
+
+  @include display(desktop) {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+}
+
+.articleSection {
+  font-family: var(--font-montserrat);
+  padding-bottom: 8px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.doctorName {
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  text-align: end;
+  padding-top: 16px;
+
+  @include display(desktop) {
+    font-size: 20px;
+  }
+}
+
+.photoSection {
   position: relative;
   width: 100%;
-  height: 400px;
-  margin-bottom: 30px;
-
-  @include display(tablet) {
-    // max-width: 530px;
-    margin-bottom: 0px;
-  }
+  height: 500px;
+  margin: 0 auto;
 
   @include display(desktop) {
-    // max-width: 530px;
-    max-width: 600px;
-    margin-bottom: 0px;
+    // width: 800px; /* szerokość wrappera */
+    // height: 600px; /* wysokość wrappera */
+    height: 100%;
+    width: 50%;
+    padding: 0 50px;
   }
 }
 
 .image {
-  object-fit: contain; // lub contain, w zależności od efektu
+  object-fit: cover;
+  // border: 3px solid orange;
 }
 
-.description {
-  margin-top: 28px;
-}
-
-.paragraph {
-  margin-top: 18px;
-}
-
-.title {
-  font-size: 24px;
-  text-align: center;
-  font-style: italic;
-  font-family: var(--font-playfair), serif;
-  font-weight: 400;
-
-  @include display(tablet) {
-    margin: 0 auto;
-    flex-direction: row;
-  }
+.main {
+  position: absolute;
+  top: 0px;
+  left: 60px;
+  width: 195px;
+  height: 254px;
+  z-index: 2; /* główne zdjęcie na wierzchu */
 
   @include display(desktop) {
-    // margin: 0 100px;
-    flex-direction: row;
+    top: 50px;
+    left: 120px;
+    width: 300px;
+    height: 390px;
+  }
+}
+
+.secondary {
+  position: absolute;
+  top: 110px;
+  left: 180px;
+  width: 195px;
+  height: 254px;
+  z-index: 3;
+
+  @include display(desktop) {
+    width: 300px;
+    height: 390px;
+    top: 220px;
+    left: 290px;
+  }
+}
+
+.tertiary {
+  position: absolute;
+  top: 200px;
+  left: 30px;
+  width: 195px;
+  height: 254px;
+  z-index: 1;
+
+  @include display(desktop) {
+    width: 300px;
+    height: 390px;
+    top: 350px;
+    left: 60px;
   }
 }

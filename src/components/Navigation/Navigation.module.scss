@@ -2,6 +2,8 @@
 
 .title {
   font-size: 18px;
+  font-family: var(--font-secondary);
+
   color: red;
 
   @include display(tablet) {
@@ -12,49 +14,60 @@
   @include display(desktop) {
     font-size: 32px;
     color: darkblue;
+    font-family: var(--font-secondary);
   }
 }
 
 .wrapper {
   display: flex;
+  justify-content: space-between;
   position: fixed;
-  top: 0;
-  left: 0;
+  padding: 0 15px;
   width: 100vw;
   height: 60px;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff8f0;
+  // background-color: red;
   z-index: 100;
+  background-color: var(--color-background-primary);
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+
+  @include display(desktop) {
+    padding: 0 60px;
+    height: 80px;
+  }
 }
 
 .logo {
-  font-family: var(--font-playfair), serif;
-  font-size: 26px;
+  font-family: var(--font-secondary);
+  font-size: 20px;
   font-weight: 400;
   text-align: center;
+  justify-content: center;
+  align-self: center;
+
+  @include display(desktop) {
+    font-size: 26px;
+  }
 }
 
 .socialBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.socialSign {
   display: none;
 
-  @include display(tablet) {
-    position: absolute;
-    top: 15px;
-    right: 50px;
-    width: 100px;
-    // border: 1px solid green;
-    display: flex;
-    justify-content: space-around;
-  }
-
   @include display(desktop) {
-    position: absolute;
-    top: 15px;
-    right: 50px;
-    width: 100px;
-    // border: 1px solid green;
+    font-family: var(--font-primary);
+    cursor: default;
     display: flex;
-    justify-content: space-around;
   }
+  // font-family: "Courier New", Courier, monospace;
+}
+
+.socialSignIcon {
+  height: 24px;
+  margin-left: 8px;
 }

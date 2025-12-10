@@ -1,35 +1,102 @@
 @import "../../styles/breakpoints.scss";
 
 .wrapper {
-  height: 80vh;
+  // border: 5px solid blue;
   display: flex;
-  justify-content: end;
-  align-items: center;
-  font-family: var(--font-playfair-italic);
+  margin-top: 80px;
+  flex-direction: column;
+
+  @include display(mobile) {
+  }
 
   @include display(tablet) {
     height: 100vh;
   }
 
   @include display(desktop) {
-    height: 100vh;
+    height: 92vh;
+    flex-direction: row;
+  }
+}
+
+.titleSection {
+  // border: 5px solid green;
+
+  font-family: var(--font-primary);
+  font-size: 18px;
+  letter-spacing: -2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 32px;
+  margin: 60px auto;
+
+  @include display(desktop) {
+    width: 50%;
+    font-size: 32px;
+    letter-spacing: -4px;
+    line-height: 50px;
+    margin: 0px;
   }
 }
 
 .title {
-  font-size: 20px;
-  font-family: var(--font-playfair-italic), serif;
-  font-style: italic;
-  font-weight: 400;
-  margin-right: 20px;
+  font-weight: 300;
+}
 
-  @include display(tablet) {
-    font-size: 32px;
-    margin-right: 50px;
-  }
+.titleGray {
+  color: var(--color-text-secondary);
+}
+
+.lineGray {
+  border: 1px solid var(--color-element-primary);
+  width: 140px;
+  margin: 40px auto;
 
   @include display(desktop) {
-    font-size: 32px;
-    margin-right: 100px;
+    margin: 70px auto;
+    width: 280px;
+  }
+}
+
+.doctorName {
+  font-family: var(--font-secondary);
+  font-size: 24px;
+  letter-spacing: 1px;
+  white-space: pre-line;
+  text-align: center;
+  line-height: 26px;
+  font-weight: 400 !important;
+
+  @include display(desktop) {
+    font-size: 30px;
+    line-height: 32px;
+  }
+}
+
+.photoSection {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // border: 5px solid orange;
+  margin: 30px auto;
+
+  @include display(desktop) {
+    /* desktop */
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.image {
+  object-fit: cover;
+  max-width: 340px;
+  max-height: 510px;
+
+  @include display(desktop) {
+    max-width: 500px;
+    max-height: 750px;
   }
 }
