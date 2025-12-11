@@ -12,15 +12,17 @@ export const Card = ({
 }) => {
   return (
     <div className={styles.wrapper}>
-      <Image
-        src={img}
-        alt={alt}
-        width={width} // docelowa szerokość obrazu
-        height={height} // docelowa wysokość obrazu
-        className={styles.image}
-        // sizes="(max-width: 768px) 80vw, 50vw"
-        // style={{ width: "100%", height: "auto" }}
-      />
+      <div className={styles.imageWrapper}>
+        <Image
+          src={img}
+          alt={alt}
+          width={width} // docelowa szerokość obrazu
+          height={height} // docelowa wysokość obrazu
+          className={styles.image}
+          // sizes="(max-width: 768px) 80vw, 50vw"
+          // style={{ width: "100%", height: "auto" }}
+        />
+      </div>
       <div className={styles.companyName}>{companyName}</div>
       <div className={styles.companyAdress}>{companyAdress}</div>
 

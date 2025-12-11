@@ -49,6 +49,7 @@
 
   @include display(desktop) {
     flex-direction: row;
+    width: 70vw;
   }
 }
 
