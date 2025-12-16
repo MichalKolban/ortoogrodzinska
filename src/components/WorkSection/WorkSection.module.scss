@@ -1,36 +1,13 @@
 @import "../../styles/breakpoints.scss";
 
 .wrapper {
-  // height: 440px;
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-around;
-  //   margin: 100px auto;
-  // margin: 50px auto;
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
-
-  // @include display(desktop) {
-  //   flex-direction: row;
-  // }
-
-  // @include display(tablet) {
-  // margin: 0 100px;
-  // max-width: 1000px;
-  // flex-direction: row;
-  // height: 200px;
-  // height: 340px;
-  // }
-
-  // @include display(desktop) {
-  // margin: 0 100px;
-  // max-width: 1000px;
-  // flex-direction: row;
-  // height: 200px;
-  // height: 340px;
-  // }
+  max-width: 1680px;
 }
 
 .sectionHeder {
@@ -46,6 +23,7 @@
   display: flex;
   width: 100vw;
   flex-direction: column;
+  max-width: 1680px;
 
   @include display(desktop) {
     flex-direction: row;
@@ -111,7 +89,6 @@
   display: flex;
   flex-direction: column;
   height: 200px;
-  //   justify-content: center;
   justify-content: space-evenly;
   margin: auto;
 }
@@ -154,7 +131,6 @@
 
 .textWrapper {
   width: 200px;
-  //   margin-bottom: 20px;
   display: flex;
   justify-content: center;
 }
