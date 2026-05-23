@@ -1,3 +1,8 @@
+.container {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
 .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);

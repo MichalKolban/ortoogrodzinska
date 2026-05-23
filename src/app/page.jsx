@@ -11,11 +11,13 @@ import { MySign } from "@/components/MySign/MySign";
 export default function Home() {
   return (
     <>
-      <SplashScreen />
-      <Navigation />
-      <HeroSection />
-      <MainSection />
-      <WorkSection />
+      <div className={styles.container}>
+        <SplashScreen />
+        <Navigation />
+        <HeroSection />
+        <MainSection />
+        <WorkSection />
+      </div>
       <MySign />
     </>
   );

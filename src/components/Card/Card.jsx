@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "motion/react";
 import styles from "./Card.module.scss";
 
 export const Card = ({
@@ -11,24 +14,36 @@ export const Card = ({
   hrefLink,
 }) => {
   return (
-    <div className={styles.wrapper}>
+    <motion.div
+      className={styles.wrapper}
+      whileHover={{
+        scale: 1.02,
+        y: -6,
+        boxShadow: "0px 16px 40px rgba(0,0,0,0.15)",
+      }}
+      transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
+    >
       <div className={styles.imageWrapper}>
         <Image
           src={img}
           alt={alt}
-          width={width} // docelowa szerokość obrazu
-          height={height} // docelowa wysokość obrazu
+          width={width}
+          height={height}
           className={styles.image}
-          // sizes="(max-width: 768px) 80vw, 50vw"
-          // style={{ width: "100%", height: "auto" }}
         />
       </div>
       <div className={styles.companyName}>{companyName}</div>
       <div className={styles.companyAdress}>{companyAdress}</div>
 
-      <a className={styles.button} href={hrefLink} target="_blank">
+      <motion.a
+        className={styles.button}
+        href={hrefLink}
+        target="_blank"
+        whileHover={{ backgroundColor: "#1a181a" }}
+        transition={{ duration: 0.25, ease: [0.25, 0.46, 0.45, 0.94] }}
+      >
         Przejdź do strony
-      </a>
-    </div>
+      </motion.a>
+    </motion.div>
   );
 };

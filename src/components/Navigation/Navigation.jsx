@@ -11,39 +11,41 @@ import Link from "next/link";
 
 export const Navigation = () => {
   return (
-    <div className={styles.wrapper}>
-      <h1 className={styles.logo}>OrtoOgrodzińska</h1>
-      <div className={styles.socialBox}>
-        <p className={styles.socialSign}>Social Media</p>
-        <Link
-          className={styles.socialSignIcon}
-          href={
-            "https://www.facebook.com/p/Karolina-Ogrodzi%C5%84ska-Dentysta-100063768894482/"
-          }
-          target="_blank"
-        >
-          <Image
-            src={iconInstagram}
-            width={24}
-            height={24}
-            alt="instagram icon"
-          />
-        </Link>
-        <Link
-          className={styles.socialSignIcon}
-          href={
-            "https://www.facebook.com/p/Karolina-Ogrodzi%C5%84ska-Dentysta-100063768894482/"
-          }
-          target="_blank"
-        >
-          <Image
-            src={iconFacebook}
-            width={24}
-            height={24}
-            alt="facebook icon"
-          />
-        </Link>
+    <nav className={styles.wrapper}>
+      <div className={styles.inner}>
+        <h1 className={styles.logo}>OrtoOgrodzińska</h1>
+        <div className={styles.socialBox}>
+          <p className={styles.socialSign}>Social Media</p>
+          <Link
+            className={styles.socialSignIcon}
+            href={
+              "https://www.facebook.com/p/Karolina-Ogrodzi%C5%84ska-Dentysta-100063768894482/"
+            }
+            target="_blank"
+          >
+            <Image
+              src={iconInstagram}
+              width={24}
+              height={24}
+              alt="instagram icon"
+            />
+          </Link>
+          <Link
+            className={styles.socialSignIcon}
+            href={
+              "https://www.facebook.com/p/Karolina-Ogrodzi%C5%84ska-Dentysta-100063768894482/"
+            }
+            target="_blank"
+          >
+            <Image
+              src={iconFacebook}
+              width={24}
+              height={24}
+              alt="facebook icon"
+            />
+          </Link>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
