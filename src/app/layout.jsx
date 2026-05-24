@@ -2,6 +2,7 @@
 // import { PlayfairDisplay } from "next/font/google";
 import { Manrope, Yellowtail, Open_Sans, Montserrat } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -40,6 +41,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18186177231"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-18186177231');
+          `}
+        </Script>
+      </head>
       <body
         className={`${manrope.variable} ${yellowtail.variable} ${openSans.variable} ${montserrat.variable}`}
       >
