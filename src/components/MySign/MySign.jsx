@@ -9,6 +9,7 @@ export const MySign = () => {
         <Link
           href={"https://www.linkedin.com/in/michalkolban/"}
           target="_blank"
+          rel="noopener noreferrer"
           className={styles.sign}
         >
           designed by <span>Kołban.</span>

@@ -6,37 +6,30 @@ const karoImg = "/karo.jpg";
 
 export const HeroSection = () => {
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.wrapper} aria-label="Sekcja główna">
       <div className={styles.titleSection}>
-        <h2 className={styles.title}>Nowoczesna ortodoncja.</h2>
-        <h2 className={`${styles.title} ${styles.titleGray}`}>
-          Uśmiechnij się pięknie.
-        </h2>
+        <h1 className={styles.title}>
+          Nowoczesna ortodoncja.
+          <span className={styles.titleGray}> Uśmiechnij się pięknie.</span>
+        </h1>
 
         <div className={styles.lineGray}></div>
-        <h1 className={styles.doctorName}>
+        <p className={styles.doctorName}>
           lek. dent. Karolina {"\n"} Ogrodzińska-Kołban
-        </h1>
+        </p>
       </div>
-      {/* <div className={styles.photoSection}>
-        <Image
-          src={karoImg}
-          fill
-          className={styles.image}
-          alt="Karolina Ogrodzińska-Kołban"
-        />
-      </div> */}
       <div className={styles.photoSection}>
         <Image
           src={karoImg}
-          alt="Karolina Ogrodzińska-Kołban"
-          width={500} // docelowa szerokość obrazu
-          height={750} // docelowa wysokość obrazu
+          alt="Ortodonta Karolina Ogrodzińska-Kołban — specjalista ortodoncji w Szczecinie i Goleniowie"
+          width={500}
+          height={750}
           className={styles.image}
           sizes="(max-width: 768px) 80vw, 50vw"
           style={{ width: "100%", height: "auto" }}
+          priority
         />
       </div>
-    </div>
+    </section>
   );
 };

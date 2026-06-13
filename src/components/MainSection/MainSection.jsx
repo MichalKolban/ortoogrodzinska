@@ -10,32 +10,32 @@ const photoTertiaryImg = "/photo3.jpg";
 
 export const MainSection = () => {
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.wrapper} aria-label="O mnie" id="o-mnie">
       <div className={styles.photoSection}>
         <Image
           src={photoSecondaryImg}
-          alt="Główne"
+          alt="Gabinet ortodontyczny w Szczecinie — leczenie ortodontyczne dorosłych"
           width={300}
           height={390}
           className={`${styles.image} ${styles.main}`}
         />
         <Image
           src={photoMainImg}
-          alt="Drugie"
+          alt="Ortodonta Karolina Ogrodzińska-Kołban podczas konsultacji"
           width={300}
           height={390}
           className={`${styles.image} ${styles.secondary}`}
         />
         <Image
           src={photoTertiaryImg}
-          alt="Trzecie"
+          alt="Nowoczesne leczenie ortodontyczne — nakładki Invisalign Szczecin"
           width={300}
           height={390}
           className={`${styles.image} ${styles.tertiary}`}
         />
       </div>
       <div className={styles.textSection}>
-        <p className={styles.heading}>Nowoczesna Ortodoncja</p>
+        <h2 className={styles.heading}>Nowoczesna ortodoncja w Szczecinie i Goleniowie</h2>
         <p className={styles.articleSection}>
           Na co dzień zajmuję się nowoczesnym leczeniem ortodontycznym dzieci i
           dorosłych. Pacjentów przyjmuję w gabinetach w Szczecinie i Goleniowie,
@@ -57,6 +57,6 @@ export const MainSection = () => {
           lek. dent. Karolina Ogrodzińska-Kołban
         </p>
       </div>
-    </div>
+    </section>
   );
 };

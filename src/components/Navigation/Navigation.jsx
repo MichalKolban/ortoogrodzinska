@@ -11,37 +11,41 @@ import Link from "next/link";
 
 export const Navigation = () => {
   return (
-    <nav className={styles.wrapper}>
+    <nav className={styles.wrapper} aria-label="Nawigacja główna">
       <div className={styles.inner}>
-        <h1 className={styles.logo}>OrtoOgrodzińska</h1>
+        <span className={styles.logo}>OrtoOgrodzińska</span>
         <div className={styles.socialBox}>
           <p className={styles.socialSign}>Social Media</p>
-          <Link
+          {/* <Link
             className={styles.socialSignIcon}
             href={
-              "https://www.facebook.com/p/Karolina-Ogrodzi%C5%84ska-Dentysta-100063768894482/"
+              "https://www.instagram.com/ortoogrodzinska/"
             }
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram OrtoOgrodzińska"
           >
             <Image
               src={iconInstagram}
               width={24}
               height={24}
-              alt="instagram icon"
+              alt="Instagram"
             />
-          </Link>
+          </Link> */}
           <Link
             className={styles.socialSignIcon}
             href={
               "https://www.facebook.com/p/Karolina-Ogrodzi%C5%84ska-Dentysta-100063768894482/"
             }
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook Karolina Ogrodzińska-Kołban"
           >
             <Image
               src={iconFacebook}
               width={24}
               height={24}
-              alt="facebook icon"
+              alt="Facebook"
             />
           </Link>
         </div>

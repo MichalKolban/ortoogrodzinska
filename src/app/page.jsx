@@ -13,12 +13,18 @@ export default function Home() {
     <>
       <div className={styles.container}>
         <SplashScreen />
-        <Navigation />
-        <HeroSection />
-        <MainSection />
-        <WorkSection />
+        <header>
+          <Navigation />
+        </header>
+        <main>
+          <HeroSection />
+          <MainSection />
+          <WorkSection />
+        </main>
       </div>
-      <MySign />
+      <footer>
+        <MySign />
+      </footer>
     </>
   );
 }

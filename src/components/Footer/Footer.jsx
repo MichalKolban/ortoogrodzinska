@@ -28,6 +28,8 @@ export const Footer = () => {
             "https://www.facebook.com/p/Karolina-Ogrodzi%C5%84ska-Dentysta-100063768894482/"
           }
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook Karolina Ogrodzińska-Kołban"
         >
           <Image
             src={iconFacebook}
