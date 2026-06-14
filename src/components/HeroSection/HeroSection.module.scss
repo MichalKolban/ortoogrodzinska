@@ -1,13 +1,9 @@
 @import "../../styles/breakpoints.scss";
 
 .wrapper {
-  // border: 5px solid blue;
   display: flex;
-  margin-top: 80px;
+  margin-top: calc(80px + env(safe-area-inset-top, 0px));
   flex-direction: column;
-
-  @include display(mobile) {
-  }
 
   @include display(tablet) {
     height: 100vh;
@@ -16,6 +12,7 @@
   @include display(desktop) {
     height: 92vh;
     flex-direction: row;
+    margin-top: 80px;
   }
 }
 
