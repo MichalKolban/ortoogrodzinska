@@ -7,6 +7,7 @@ import styles from "./SplashScreen.module.scss";
 export default function SplashScreen() {
   const [startExit, setStartExit] = useState(false);
   const [isMounted, setIsMounted] = useState(false); // <--- nowy state
+  const [hideSplash, setHideSplash] = useState(false); // <--- odmontowanie po zakończeniu animacji
 
   const text = "Uśmiech, który zmienia wszystko.";
 
@@ -28,7 +29,7 @@ export default function SplashScreen() {
     return () => clearTimeout(timer);
   }, [text]);
 
-  if (!isMounted) return null; // <--- nic nie renderujemy na serwerze
+  if (!isMounted || hideSplash) return null; // <--- nic nie renderujemy na serwerze / po zakończeniu animacji
 
   return (
     // <motion.div
@@ -40,14 +41,17 @@ export default function SplashScreen() {
     //calkiem ok wersja 1
     <motion.div
       className={styles.splash}
+      style={{ zIndex: 9999 }}
       animate={
-        startExit
-          ? { y: "-20%", opacity: 0, zIndex: -10 }
-          : { y: 0, opacity: 1, zIndex: 9999 }
+        startExit ? { y: "-100%", opacity: [1, 1, 0] } : { y: 0, opacity: 1 }
       }
       transition={{
-        duration: 0.9,
-        ease: [0.25, 0.8, 0.25, 1],
+        duration: 1.1,
+        ease: [0.65, 0, 0.35, 1],
+        opacity: { duration: 1.1, times: [0, 0.65, 1], ease: "easeIn" },
+      }}
+      onAnimationComplete={() => {
+        if (startExit) setHideSplash(true);
       }}
     >
       {/* //wersja druga
