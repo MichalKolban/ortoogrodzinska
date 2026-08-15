@@ -10,7 +10,15 @@ const photoTertiaryImg = "/photo3.jpg";
 
 export const MainSection = () => {
   return (
-    <section className={styles.wrapper} aria-label="O mnie" id="o-mnie">
+    <motion.section
+      className={styles.wrapper}
+      aria-label="O mnie"
+      id="o-mnie"
+      initial={{ opacity: 0, y: 36 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.35 }}
+      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.15 }}
+    >
       <div className={styles.photoSection}>
         <Image
           src={photoSecondaryImg}
@@ -57,6 +65,6 @@ export const MainSection = () => {
           lek. dent. Karolina Ogrodzińska-Kołban
         </p>
       </div>
-    </section>
+    </motion.section>
   );
 };

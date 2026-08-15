@@ -1,3 +1,4 @@
+import * as motion from "motion/react-client";
 import styles from "./WorkSection.module.scss";
 import { Card } from "../Card/Card";
 
@@ -6,7 +7,15 @@ const ortoparkImg = "/ortoprzyparku.png";
 
 export const WorkSection = () => {
   return (
-    <section className={styles.wrapper} aria-label="Gabinety" id="gabinety">
+    <motion.section
+      className={styles.wrapper}
+      aria-label="Gabinety"
+      id="gabinety"
+      initial={{ opacity: 0, y: 36 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.35 }}
+      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.15 }}
+    >
       <div className={styles.sectionHeder}>
         <h2 className={styles.sectionHeading}>
           Miejsca w których
@@ -16,6 +25,7 @@ export const WorkSection = () => {
       </div>
       <div className={styles.sectionCard}>
         <Card
+          index={0}
           img={nbdentalImg}
           alt={"Logo NB Dental Clinic — stomatolog i ortodonta Goleniów"}
           width={163}
@@ -25,6 +35,7 @@ export const WorkSection = () => {
           hrefLink={"https://nbdental.pl/"}
         />
         <Card
+          index={1}
           img={ortoparkImg}
           alt={"Logo Ortodoncja przy Parku — ortodonta Szczecin"}
           width={107}
@@ -34,6 +45,6 @@ export const WorkSection = () => {
           hrefLink={"https://ortodoncjaprzyparku.pl"}
         />
       </div>
-    </section>
+    </motion.section>
   );
 };

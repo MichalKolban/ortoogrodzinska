@@ -6,8 +6,8 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #fdfdfd;
-  color: #242126;
+  background: var(--color-background-primary);
+  color: var(--color-text-strong);
   display: flex;
   justify-content: flex-end;
   align-items: center;

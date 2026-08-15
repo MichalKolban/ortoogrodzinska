@@ -1,15 +1,21 @@
 :root {
-  --color-background-primary: #fdfdfd;
-  --color-text-primary: #171717;
-  --color-text-secondary: #999;
-  --color-element-primary: #99999959;
-}
+  color-scheme: light;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-background-primary: #fdfdfd;
+  --color-surface-alt: #f7f7f7;
+
+  --color-text-primary: #171717;
+  --color-text-strong: #242126;
+  --color-text-secondary: #999;
+
+  --color-element-primary: #99999959;
+  --color-border-subtle: #ddd;
+  --color-border-strong: rgba(17, 17, 17, 0.5);
+  --color-footer-bg: #333;
+  --color-on-dark: #fdfdfd;
+
+  --color-button-bg: #444145;
+  --color-button-bg-hover: #1a181a;
 }
 
 html,
@@ -24,7 +30,8 @@ body {
 
   color: var(--color-text-primary);
   background: var(--color-background-primary);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-primary), -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -38,10 +45,4 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }

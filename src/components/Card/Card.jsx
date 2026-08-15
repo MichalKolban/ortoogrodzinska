@@ -12,10 +12,22 @@ export const Card = ({
   companyName,
   companyAdress,
   hrefLink,
+  index = 0,
 }) => {
   return (
     <motion.div
       className={styles.wrapper}
+      initial={{ opacity: 0, y: 32 }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 0.7,
+          ease: [0.16, 1, 0.3, 1],
+          delay: 0.2 + index * 0.15,
+        },
+      }}
+      viewport={{ once: true, amount: 0.35 }}
       whileHover={{
         scale: 1.02,
         y: -6,
@@ -39,6 +51,7 @@ export const Card = ({
         className={styles.button}
         href={hrefLink}
         target="_blank"
+        // wartość musi być zsynchronizowana z --color-button-bg-hover w globals.css
         whileHover={{ backgroundColor: "#1a181a" }}
         transition={{ duration: 0.25, ease: [0.25, 0.46, 0.45, 0.94] }}
       >

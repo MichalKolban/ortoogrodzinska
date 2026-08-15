@@ -1,13 +1,6 @@
-import { Manrope, Yellowtail, Open_Sans, Montserrat } from "next/font/google";
+import { Yellowtail, Open_Sans, Montserrat } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-
-const manrope = Manrope({
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-manrope",
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
 
 const openSans = Open_Sans({
   subsets: ["latin", "latin-ext"],
@@ -131,7 +124,7 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body
-        className={`${manrope.variable} ${yellowtail.variable} ${openSans.variable} ${montserrat.variable}`}
+        className={`${yellowtail.variable} ${openSans.variable} ${montserrat.variable}`}
       >
         {children}
       </body>
