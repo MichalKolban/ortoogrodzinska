@@ -26,15 +26,15 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title:
-    "Ortodonta Szczecin i Goleniów — lek. dent. Karolina Ogrodzińska-Kołban | OrtoOgrodzińska",
+    "Ortodonta Szczecin i Goleniów - lek. dent. Karolina Ogrodzińska-Kołban | OrtoOgrodzińska",
   description:
-    "Ortodonta Szczecin i Goleniów — lek. dent. Karolina Ogrodzińska-Kołban. Nowoczesne leczenie ortodontyczne dzieci i dorosłych: aparaty stałe, ruchome, Invisalign. Umów wizytę w NB Dental Clinic lub Ortodoncja przy Parku.",
+    "Ortodonta Szczecin i Goleniów - lek. dent. Karolina Ogrodzińska-Kołban. Nowoczesne leczenie ortodontyczne dzieci i dorosłych: aparaty stałe, ruchome, Invisalign. Umów wizytę w NB Dental Clinic lub Ortodoncja przy Parku.",
   keywords:
     "ortodonta Szczecin, ortodoncja Szczecin, stomatolog Szczecin, ortodonta Goleniów, stomatolog Goleniów, Invisalign Szczecin, aparat ortodontyczny Szczecin, ortodoncja dzieci Szczecin, Karolina Ogrodzińska-Kołban, OrtoOgrodzińska, NB Dental Clinic, Ortodoncja przy Parku",
   authors: [{ name: "lek. dent. Karolina Ogrodzińska-Kołban" }],
   openGraph: {
     title:
-      "Ortodonta Szczecin i Goleniów — lek. dent. Karolina Ogrodzińska-Kołban",
+      "Ortodonta Szczecin i Goleniów - lek. dent. Karolina Ogrodzińska-Kołban",
     description:
       "Nowoczesne leczenie ortodontyczne dzieci i dorosłych w Szczecinie i Goleniowie. Aparaty stałe, ruchome oraz nakładki Invisalign.",
     locale: "pl_PL",
@@ -59,9 +59,9 @@ export const viewport = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Dentist",
-  name: "OrtoOgrodzińska — lek. dent. Karolina Ogrodzińska-Kołban",
+  name: "OrtoOgrodzińska - lek. dent. Karolina Ogrodzińska-Kołban",
   description:
-    "Ortodonta Szczecin i Goleniów. Nowoczesne leczenie ortodontyczne dzieci i dorosłych — aparaty stałe, ruchome, Invisalign.",
+    "Ortodonta Szczecin i Goleniów. Nowoczesne leczenie ortodontyczne dzieci i dorosłych - aparaty stałe, ruchome, Invisalign.",
   url: "https://ortoogrodzinska.pl",
   image: "https://ortoogrodzinska.pl/karo.jpg",
   telephone: "",
@@ -78,7 +78,7 @@ const jsonLd = {
     },
     {
       "@type": "MedicalProcedure",
-      name: "Invisalign — nakładki przezroczyste",
+      name: "Invisalign - nakładki przezroczyste",
     },
   ],
   address: [

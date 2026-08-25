@@ -27,7 +27,7 @@ export const WorkSection = () => {
         <Card
           index={0}
           img={nbdentalImg}
-          alt={"Logo NB Dental Clinic — stomatolog i ortodonta Goleniów"}
+          alt={"Logo NB Dental Clinic - stomatolog i ortodonta Goleniów"}
           width={163}
           height={42}
           companyName={"NB Dental Clinic"}
@@ -37,7 +37,7 @@ export const WorkSection = () => {
         <Card
           index={1}
           img={ortoparkImg}
-          alt={"Logo Ortodoncja przy Parku — ortodonta Szczecin"}
+          alt={"Logo Ortodoncja przy Parku - ortodonta Szczecin"}
           width={107}
           height={63}
           companyName={"Ortodoncja przy Parku"}

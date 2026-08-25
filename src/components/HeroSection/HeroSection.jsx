@@ -33,7 +33,7 @@ export const HeroSection = () => {
       <div className={styles.photoSection}>
         <Image
           src={karoImg}
-          alt="Ortodonta Karolina Ogrodzińska-Kołban — specjalista ortodoncji w Szczecinie i Goleniowie"
+          alt="Ortodonta Karolina Ogrodzińska-Kołban - specjalista ortodoncji w Szczecinie i Goleniowie"
           width={500}
           height={750}
           className={styles.image}

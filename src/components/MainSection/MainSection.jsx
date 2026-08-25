@@ -22,7 +22,7 @@ export const MainSection = () => {
       <div className={styles.photoSection}>
         <Image
           src={photoSecondaryImg}
-          alt="Gabinet ortodontyczny w Szczecinie — leczenie ortodontyczne dorosłych"
+          alt="Gabinet ortodontyczny w Szczecinie - leczenie ortodontyczne dorosłych"
           width={300}
           height={390}
           className={`${styles.image} ${styles.main}`}
@@ -36,7 +36,7 @@ export const MainSection = () => {
         />
         <Image
           src={photoTertiaryImg}
-          alt="Nowoczesne leczenie ortodontyczne — nakładki Invisalign Szczecin"
+          alt="Nowoczesne leczenie ortodontyczne - nakładki Invisalign Szczecin"
           width={300}
           height={390}
           className={`${styles.image} ${styles.tertiary}`}

@@ -1,4 +1,4 @@
-// Wspólne stałe czasowe splash screena — używane zarówno przez sam
+// Wspólne stałe czasowe splash screena - używane zarówno przez sam
 // SplashScreen (do wyliczenia, kiedy zacząć animację wyjścia), jak i przez
 // HeroSection (żeby jego animacja wejścia odpaliła się dopiero, gdy splash
 // naprawdę zniknie, a nie w tle, niewidocznie, podczas gdy splash go zasłania).
