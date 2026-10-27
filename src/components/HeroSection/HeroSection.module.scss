@@ -2,15 +2,17 @@
 
 .wrapper {
   display: flex;
-  margin-top: calc(80px + env(safe-area-inset-top, 0px));
+  margin-top: calc(60px + env(safe-area-inset-top, 0px));
   flex-direction: column;
 
   @include display(tablet) {
-    height: 100vh;
+    flex-direction: row;
+    height: calc(100vh - 60px - env(safe-area-inset-top, 0px));
+    margin-top: calc(60px + env(safe-area-inset-top, 0px));
   }
 
   @include display(desktop) {
-    height: 92vh;
+    height: calc(100vh - 80px);
     flex-direction: row;
     margin-top: 80px;
   }
@@ -29,6 +31,15 @@
   margin: 60px auto;
   width: 100%;
   padding: 0 16px;
+
+  @include display(tablet) {
+    width: 50%;
+    font-size: 22px;
+    letter-spacing: -2px;
+    line-height: 38px;
+    margin: 0;
+    padding: 0 24px;
+  }
 
   @include display(desktop) {
     width: 50%;
@@ -59,6 +70,11 @@
   width: 140px;
   margin: 40px auto;
 
+  @include display(tablet) {
+    margin: 50px auto;
+    width: 200px;
+  }
+
   @include display(desktop) {
     margin: 70px auto;
     width: 280px;
@@ -74,6 +90,11 @@
   line-height: 26px;
   font-weight: 400 !important;
 
+  @include display(tablet) {
+    font-size: 26px;
+    line-height: 29px;
+  }
+
   @include display(desktop) {
     font-size: 30px;
     line-height: 32px;
@@ -85,8 +106,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // border: 5px solid orange;
   margin: 30px auto;
+
+  @include display(tablet) {
+    width: 50%;
+    margin: 0 auto;
+  }
 
   @include display(desktop) {
     width: 50%;
@@ -98,6 +123,11 @@
   object-fit: cover;
   max-width: 340px;
   max-height: 510px;
+
+  @include display(tablet) {
+    max-width: 380px;
+    max-height: 570px;
+  }
 
   @include display(desktop) {
     max-width: 500px;
