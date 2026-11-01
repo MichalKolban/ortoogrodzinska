@@ -15,6 +15,10 @@
   @include display(desktop) {
     flex-direction: row;
     margin-top: 60px;
+    min-height: 600px;
+  }
+
+  @include display(large-desktop) {
     height: 800px;
   }
 }
@@ -93,9 +97,15 @@
 
   @include display(desktop) {
     max-width: none;
-    height: 100%;
+    height: auto;
+    min-height: 600px;
     width: 50%;
     padding: 0 50px;
+    margin: 0;
+  }
+
+  @include display(large-desktop) {
+    height: 100%;
   }
 }
 
@@ -118,7 +128,7 @@
     height: 300px;
   }
 
-  @include display(desktop) {
+  @include display(large-desktop) {
     top: 50px;
     left: 120px;
     width: 300px;
@@ -141,7 +151,7 @@
     left: 220px;
   }
 
-  @include display(desktop) {
+  @include display(large-desktop) {
     width: 300px;
     height: 390px;
     top: 220px;
@@ -164,7 +174,7 @@
     left: 40px;
   }
 
-  @include display(desktop) {
+  @include display(large-desktop) {
     width: 300px;
     height: 390px;
     top: 350px;

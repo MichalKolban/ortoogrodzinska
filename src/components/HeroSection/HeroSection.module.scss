@@ -9,12 +9,14 @@
     flex-direction: row;
     height: calc(100vh - 60px - env(safe-area-inset-top, 0px));
     margin-top: calc(60px + env(safe-area-inset-top, 0px));
+    overflow: hidden;
   }
 
   @include display(desktop) {
     height: calc(100vh - 80px);
     flex-direction: row;
     margin-top: 80px;
+    overflow: hidden;
   }
 }
 

@@ -1,7 +1,7 @@
 @import "../../styles/breakpoints.scss";
 
 .wrapper {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -21,13 +21,13 @@
 .sectionCard {
   justify-content: space-around;
   display: flex;
-  width: 100vw;
+  width: 100%;
   flex-direction: column;
   max-width: 1680px;
 
   @include display(desktop) {
     flex-direction: row;
-    width: 70vw;
+    width: 70%;
   }
 }
 
